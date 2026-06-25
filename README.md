@@ -1,6 +1,6 @@
 ## NextJS API Request Method
 
-### Request method
+### Request method  app/api/request-method
 ```bash
 import { NextResponse } from "next/server";
 
