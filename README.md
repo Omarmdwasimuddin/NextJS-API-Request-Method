@@ -1,4 +1,4 @@
-## NextJS API Request Method
+## NextJS API---> Request Method
 
 ### app/api/request-method
 ```bash
