@@ -2,10 +2,10 @@
 
 ### app/api/request-method
 ```bash
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 
-export async function GET(request:Request) {
+export async function GET(request:NextRequest) {
     
     return NextResponse.json(
         {status: "Success response", message: "This is GET request"},
@@ -13,7 +13,7 @@ export async function GET(request:Request) {
     )
 }
 
-export async function POST(request:Request) {
+export async function POST(request:NextRequest) {
     
     return NextResponse.json(
         {status: "Success response", message: "This is POST request"},
@@ -21,7 +21,7 @@ export async function POST(request:Request) {
     )
 }
 
-export async function PUT(request:Request) {
+export async function PUT(request:NextRequest) {
     
     return NextResponse.json(
         {status: "Success response", message: "This is PUT request"},
@@ -29,7 +29,7 @@ export async function PUT(request:Request) {
     )
 }
 
-export async function PATCH(request:Request) {
+export async function PATCH(request:NextRequest) {
     
     return NextResponse.json(
         {status: "Success response", message: "This is PATCH request"},
@@ -37,7 +37,7 @@ export async function PATCH(request:Request) {
     )
 }
 
-export async function DELETE(request:Request) {
+export async function DELETE(request:NextRequest) {
     
     return NextResponse.json(
         {status: "Success response", message: "This is DELETE request"},
